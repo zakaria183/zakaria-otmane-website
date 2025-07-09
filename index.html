@@ -5,15 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakaria Otmane - Applied Mathematics</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Ajout direct dans le HTML pour test rapide, à mettre dans styles.css sinon */
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 50px;
+            width: auto;
+        }
+
+        header {
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
+            <!-- Logos alignés à droite -->
+            <div class="logo-container">
+                <a href="https://www.insa-rennes.fr/" target="_blank">
+                    <img src="Insa_Rennes_logo.png" alt="INSA Rennes Logo">
+                </a>
+                <a href="https://www.univ-rennes.fr/" target="_blank">
+                    <img src="Universite_Rennes_logo.png" alt="Université de Rennes Logo">
+                </a>
+            </div>
+
             <h1>Zakaria Otmane</h1>
             <h2>Student in Engineering Mathematics and Fundamental Mathematics</h2>
             <h3>INSA Rennes, Department of Applied Mathematics</h3>
-			<h3>Université de Rennes,  Faculty of Mathematics</h3>
+            <h3>Université de Rennes, Faculty of Mathematics</h3>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -35,38 +65,38 @@
     <section id="projects" class="container">
         <h2>Projects</h2>
         <ul>
-		    <li>
+            <li>
                 <h3>Project 1: Mathematical modeling of crowd evacuation</h3>
                 <p>This project was carried out in the second year of the MP class as part of the TIPE (Supervised Personal Initiative Project in English). The objective was to assess the relevance of a macroscopic model in predicting and analyzing an emergency evacuation of a small park, considering safety constraints. To be more precise, I was tasked with studying the movement of a crowd as if it were the flow of a fluid, applying the macroscopic laws of fluid mechanics. This study involved, among other things, the theory of Eulerian descriptions, particle derivatives, and the method of characteristics to solve partial differential equations, such as the mass conservation equation.</p>
-				 <p>Download the presentation slides: 
-                <a href="Evacuation d'une foule - Zakaria Otmane.pdf" download>Download</a>
-            </p>
+                <p>Download the presentation slides: 
+                    <a href="Evacuation d'une foule - Zakaria Otmane.pdf" download>Download</a>
+                </p>
             </li>
             <li>
                 <h3>Project 2: Complex Analysis and Study of the Riemann Zeta Function</h3>
                 <p>This project, undertaken as part of my fourth year of studies at INSA, involved writing a thesis in which I conducted an in-depth study of the Riemann zeta function. This function is a central object in complex analysis and number theory. My goal was to explore its analytic and arithmetic properties, including its analytic continuation, functional equation, and its profound connections with prime numbers. The thesis also includes a numerical study of the representations of this function using Python.</p>
-				<p>Download the thesis: 
-                <a href="Zakaria Otmane Riemann_Zeta_Function.pdf" download>Download</a>
-            </p>
-			<p>Download the presentation slides: 
-                <a href="Presentation_Zeta_Function.pdf" download>Download</a>
-            </p>
+                <p>Download the thesis: 
+                    <a href="Zakaria Otmane Riemann_Zeta_Function.pdf" download>Download</a>
+                </p>
+                <p>Download the presentation slides: 
+                    <a href="Presentation_Zeta_Function.pdf" download>Download</a>
+                </p>
             </li>
-			<li>
+            <li>
                 <h3>Project 3: Holomorphic ODEs Around the Notion of Monodromy and Regular Singularities</h3>
-                <p> As part of a research collaboration with IRMAR during my fourth year at INSA, I conducted a thesis exploring holomorphic differential equations and the concept of monodromy. These equations are key objects in complex analysis, particularly when studying the behavior of solutions near singularities. My aim was to understand how solutions transform under analytic continuation around such points, using tools from algebraic topology. The thesis also includes a theoretical and computational analysis of systems with regular singularities.</p>
-				<p>Download the thesis: 
-				<a href="Zakaria Otmane Holomorphic_ODE__Monodromy.pdf" download>Download</a>
-			</p>
-			<p>Download the presentation slides: 
-				<a href="Presentation_Monodromy.pdf" download>Download</a>
-			</p>
+                <p>As part of a research collaboration with IRMAR during my fourth year at INSA, I conducted a thesis exploring holomorphic differential equations and the concept of monodromy. These equations are key objects in complex analysis, particularly when studying the behavior of solutions near singularities. My aim was to understand how solutions transform under analytic continuation around such points, using tools from algebraic topology. The thesis also includes a theoretical and computational analysis of systems with regular singularities.</p>
+                <p>Download the thesis: 
+                    <a href="Zakaria Otmane Holomorphic_ODE__Monodromy.pdf" download>Download</a>
+                </p>
+                <p>Download the presentation slides: 
+                    <a href="Presentation_Monodromy.pdf" download>Download</a>
+                </p>
             </li>
-			<li>
-				<h3>Project 4: Introduction to Optimal Transport – Theory and Numerics</h3>
-				<p>This project, conducted as part of my fourth-year internship with INSA Rennes, is carried out in collaboration with the Grupo de Física Matemática at Instituto Superior Técnico, Lisbon. The goal is to explore the theoretical foundations and numerical methods of optimal transport, a rich mathematical field at the intersection of analysis, variational calculus, and probability, with significant impact in the past two decades.</p>
-				<p>After studying core concepts such as the Monge and Kantorovich formulations, the dual problem, and entropic regularization, I am implementing efficient numerical algorithms in Python. This includes solving the Fokker–Planck equation in realistic geometries (e.g., slit experiments), as well as applications in image processing such as morphing and inpainting.</p>
-			</li>
+            <li>
+                <h3>Project 4: Introduction to Optimal Transport – Theory and Numerics</h3>
+                <p>This project, conducted as part of my fourth-year internship with INSA Rennes, is carried out in collaboration with the Grupo de Física Matemática at Instituto Superior Técnico, Lisbon. The goal is to explore the theoretical foundations and numerical methods of optimal transport, a rich mathematical field at the intersection of analysis, variational calculus, and probability, with significant impact in the past two decades.</p>
+                <p>After studying core concepts such as the Monge and Kantorovich formulations, the dual problem, and entropic regularization, I am implementing efficient numerical algorithms in Python. This includes solving the Fokker–Planck equation in realistic geometries (e.g., slit experiments), as well as applications in image processing such as morphing and inpainting.</p>
+            </li>
         </ul>
     </section>
 
