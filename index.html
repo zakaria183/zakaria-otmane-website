@@ -1,131 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakaria Otmane - Applied Mathematics</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Ajout direct dans le HTML pour test rapide, à mettre dans styles.css sinon */
-        .logo-container {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakaria Otmane - Applied Mathematics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-        .logo-container img {
-            height: 50px;
-            width: auto;
-        }
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      background-color: #fafafa;
+      color: #222;
+    }
 
-        header {
-            position: relative;
-        }
-    </style>
+    header {
+      background: linear-gradient(135deg, #1c1c1c 0%, #2f3e46 100%);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 45px;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: 0.9;
+      transition: opacity 0.2s;
+    }
+
+    .logo-container img:hover {
+      opacity: 1;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.3em;
+      font-weight: 600;
+    }
+
+    header h2, header h3 {
+      margin: 0.2em 0;
+      font-weight: 300;
+      color: #dcdcdc;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #aad1ff;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #2f3e46;
+      padding-bottom: 8px;
+      color: #2f3e46;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background: white;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    li h3 {
+      color: #1c1c1c;
+      margin-top: 0;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .logo-container {
+        position: static;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      header {
+        padding-top: 80px;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <!-- Logos alignés à droite -->
-            <div class="logo-container">
-                <a href="https://www.insa-rennes.fr/" target="_blank">
-                    <img src="Insa_Rennes_logo.png" alt="INSA Rennes Logo">
-                </a>
-                <a href="https://www.univ-rennes.fr/" target="_blank">
-                    <img src="Universite_Rennes_logo.png" alt="Université de Rennes Logo">
-                </a>
-            </div>
+  <header>
+    <div class="logo-container">
+      <a href="https://www.insa-rennes.fr/" target="_blank">
+        <img src="Insa_Rennes_logo.png" alt="INSA Rennes Logo">
+      </a>
+      <a href="https://www.univ-rennes.fr/" target="_blank">
+        <img src="Universite_Rennes_logo.png" alt="Université de Rennes Logo">
+      </a>
+    </div>
+    <h1>Zakaria Otmane</h1>
+    <h2>Applied and Fundamental Mathematics</h2>
+    <h3>INSA Rennes · Université de Rennes</h3>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <h1>Zakaria Otmane</h1>
-            <h2>Student in Engineering Mathematics and Fundamental Mathematics</h2>
-            <h3>INSA Rennes, Department of Applied Mathematics</h3>
-            <h3>Université de Rennes, Faculty of Science</h3>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#cv">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>I am Zakaria Otmane, a fifth-year applied mathematics student at INSA Rennes in France. After completing two years of preparatory classes (MPSI–MP) at Lycée Dupuy de Lôme, I joined INSA Rennes, where I have been actively involved in mathematical research projects. My main areas of interest include partial differential equations, probability theory, and optimization.</p>
+    <p>To strengthen my theoretical background, I am pursuing a double degree including a Master’s in Fundamental Mathematics at Université de Rennes. This path reflects my ambition to deepen my understanding of modern mathematical analysis and prepare for advanced research.</p>
+  </section>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>I am Zakaria Otmane, a fifth-year applied mathematics student at INSA Rennes in France. After completing two years of preparatory classes (MPSI-MP) at Lycée Dupuy de Lôme, I joined INSA Rennes, where I have been actively involved in mathematical research projects. My main areas of interest include partial differential equations, probability theory, and optimization, which are essential for addressing modern scientific and engineering challenges.</p>
-        
-        <p>Driven by a strong desire to deepen my understanding of the theoretical foundations underlying these fields, I decided to pursue a double degree that includes a Master in Fundamental Mathematics at Université de Rennes. This choice reflects my ambition to broaden my mathematical expertise and prepare myself for advanced research in the future.</p>
-    </section>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3>Project 1: Mathematical modeling of crowd evacuation</h3>
+        <p>This project was carried out in the second year of the MP class as part of the TIPE (Supervised Personal Initiative Project in English). The objective was to assess the relevance of a macroscopic model in predicting and analyzing an emergency evacuation of a small park, considering safety constraints. To be more precise, I was tasked with studying the movement of a crowd as if it were the flow of a fluid, applying the macroscopic laws of fluid mechanics. This study involved, among other things, the theory of Eulerian descriptions, particle derivatives, and the method of characteristics to solve partial differential equations, such as the mass conservation equation.</p>
+        <p>Download the presentation slides (in French): 
+          <a href="Evacuation d'une foule - Zakaria Otmane.pdf" download>Download</a>
+        </p>
+      </li>
+      <li>
+        <h3>Project 2: Complex Analysis and Study of the Riemann Zeta Function</h3>
+        <p>This project, undertaken as part of my fourth year of studies at INSA, involved writing a thesis in which I conducted an in-depth study of the Riemann zeta function. This function is a central object in complex analysis and number theory. My goal was to explore its analytic and arithmetic properties, including its analytic continuation, functional equation, and its profound connections with prime numbers. The thesis also includes a numerical study of the representations of this function using Python.</p>
+        <p>Download the thesis: 
+          <a href="Zakaria Otmane Riemann_Zeta_Function.pdf" download>Download</a>
+        </p>
+        <p>Download the presentation slides: 
+          <a href="Presentation_Zeta_Function.pdf" download>Download</a>
+        </p>
+      </li>
+      <li>
+        <h3>Project 3: Holomorphic ODEs Around the Notion of Monodromy and Regular Singularities</h3>
+        <p>As part of a research collaboration with IRMAR during my fourth year at INSA, I conducted a thesis exploring holomorphic differential equations and the concept of monodromy. These equations are key objects in complex analysis, particularly when studying the behavior of solutions near singularities. My aim was to understand how solutions transform under analytic continuation around such points, using tools from algebraic topology. The thesis also includes a theoretical analysis of systems with regular singularities.</p>
+        <p>Download the thesis: 
+          <a href="Zakaria Otmane Holomorphic_ODE__Monodromy.pdf" download>Download</a>
+        </p>
+        <p>Download the presentation slides: 
+          <a href="Presentation_Monodromy.pdf" download>Download</a>
+        </p>
+      </li>
+      <li>
+        <h3>Project 4: Introduction to Optimal Transport – Theory and Numerics</h3>
+        <p>This project, conducted as part of my fourth-year internship with INSA Rennes, is carried out in collaboration with the Grupo de Física Matemática at Instituto Superior Técnico, Lisbon. The goal was to explore the theoretical foundations and numerical methods of optimal transport, a rich mathematical field at the intersection of analysis, variational calculus, and probability, with significant impact in the past two decades.</p>
+        <p>After studying core concepts such as the Monge and Kantorovich formulations, the dual problem, and entropic regularization, I implemented efficient numerical algorithms in Python. The goal was to produce realistic animations by using the Wasserstein distance in optimal transport applications, including image morphing and inpainting.</p>
+        <p>Download the internship report (in French): 
+          <a href="Zakaria Otmane Transport_Optimal.pdf" download>Download</a>
+        </p>
+        <p>Google Colab notebook in Python: 
+          <a href="https://colab.research.google.com/drive/1FBV5INefwVMUGLKwVwr0l-lC9xUaGTin?usp=sharing/your_shared_notebook_link" target="_blank">Download</a>
+        </p>
+        <p>Download the presentation slides (in French): 
+          <a href="Présentation_Transport_Optimal.pdf" download>Download</a>
+        </p>
+      </li>
+    </ul>
+  </section>
 
-    <section id="projects" class="container">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1: Mathematical modeling of crowd evacuation</h3>
-                <p>This project was carried out in the second year of the MP class as part of the TIPE (Supervised Personal Initiative Project in English). The objective was to assess the relevance of a macroscopic model in predicting and analyzing an emergency evacuation of a small park, considering safety constraints. To be more precise, I was tasked with studying the movement of a crowd as if it were the flow of a fluid, applying the macroscopic laws of fluid mechanics. This study involved, among other things, the theory of Eulerian descriptions, particle derivatives, and the method of characteristics to solve partial differential equations, such as the mass conservation equation.</p>
-                <p>Download the presentation slides (in French): 
-                    <a href="Evacuation d'une foule - Zakaria Otmane.pdf" download>Download</a>
-                </p>
-            </li>
-            <li>
-                <h3>Project 2: Complex Analysis and Study of the Riemann Zeta Function</h3>
-                <p>This project, undertaken as part of my fourth year of studies at INSA, involved writing a thesis in which I conducted an in-depth study of the Riemann zeta function. This function is a central object in complex analysis and number theory. My goal was to explore its analytic and arithmetic properties, including its analytic continuation, functional equation, and its profound connections with prime numbers. The thesis also includes a numerical study of the representations of this function using Python.</p>
-                <p>Download the thesis: 
-                    <a href="Zakaria Otmane Riemann_Zeta_Function.pdf" download>Download</a>
-                </p>
-                <p>Download the presentation slides: 
-                    <a href="Presentation_Zeta_Function.pdf" download>Download</a>
-                </p>
-            </li>
-            <li>
-                <h3>Project 3: Holomorphic ODEs Around the Notion of Monodromy and Regular Singularities</h3>
-                <p>As part of a research collaboration with IRMAR during my fourth year at INSA, I conducted a thesis exploring holomorphic differential equations and the concept of monodromy. These equations are key objects in complex analysis, particularly when studying the behavior of solutions near singularities. My aim was to understand how solutions transform under analytic continuation around such points, using tools from algebraic topology. The thesis also includes a theoretical analysis of systems with regular singularities.</p>
-                <p>Download the thesis: 
-                    <a href="Zakaria Otmane Holomorphic_ODE__Monodromy.pdf" download>Download</a>
-                </p>
-                <p>Download the presentation slides: 
-                    <a href="Presentation_Monodromy.pdf" download>Download</a>
-                </p>
-            </li>
-            <li>
-                <h3>Project 4: Introduction to Optimal Transport – Theory and Numerics</h3>
-                <p>This project, conducted as part of my fourth-year internship with INSA Rennes, is carried out in collaboration with the Grupo de Física Matemática at Instituto Superior Técnico, Lisbon. The goal was to explore the theoretical foundations and numerical methods of optimal transport, a rich mathematical field at the intersection of analysis, variational calculus, and probability, with significant impact in the past two decades.</p>
-                <p>After studying core concepts such as the Monge and Kantorovich formulations, the dual problem, and entropic regularization, I implemented efficient numerical algorithms in Python. The goal was to produce realistic animations by using the Wasserstein distance in optimal transport applications, including image morphing and inpainting.</p>
-				<p>Download the internship report (in French): 
-                    <a href="Zakaria Otmane Transport_Optimal.pdf" download>Download</a>
-                </p>
-				<p>Google Colab notebook in Python: 
-                    <a href="https://colab.research.google.com/drive/1FBV5INefwVMUGLKwVwr0l-lC9xUaGTin?usp=sharing/your_shared_notebook_link" target="_blank">Download</a>
-                </p>
-				<p>Download the presentation slides (in French): 
-                    <a href="Présentation_Transport_Optimal.pdf" download>Download</a>
-                </p>
-            </li>
-        </ul>
-    </section>
+  <section id="cv" class="container">
+    <h2>CV</h2>
+    <p><a href="CV Zakaria Otmane.pdf" target="_blank">Download my CV</a></p>
+  </section>
 
-    <section id="cv" class="container">
-        <h2>CV</h2>
-        <p>Download my CV: <a href="CV Zakaria Otmane.pdf" target="_blank">Download</a></p>
-    </section>
-    
-    <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Academic Emails: 
-			<a href="mailto:zakaria.otmane@insa-rennes.fr">zakaria.otmane@insa-rennes.fr</a>, 
-			<a href="mailto:zakaria.otmane@etudiant.univ-rennes.fr">zakaria.otmane@etudiant.univ-rennes.fr</a>
-		</p>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Zakaria Otmane. All rights reserved.</p>
-        </div>
-    </footer>
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>zakaria.otmane@insa-rennes.fr · zakaria.otmane@etudiant.univ-rennes.fr</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Zakaria Otmane. All rights reserved.</p>
+  </footer>
 </body>
 </html>
